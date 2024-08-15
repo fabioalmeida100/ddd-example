@@ -12,7 +12,7 @@ describe("Domain events tests - customer created event", () => {
     const eventDispatcher = new EventDispatcher();
     const eventHandler1 = new SendConsoleLog1WhenCustomerCreatedHandler();
     const eventHandler2 = new SendConsoleLog2WhenCustomerCreatedHandler()
-    const nameOfEvent = CustomerCreatedEvent.constructor.name.toString();
+    const nameOfEvent = "CustomerCreatedEvent";
 
     //Act
     eventDispatcher.register(nameOfEvent, eventHandler1);
@@ -30,7 +30,7 @@ describe("Domain events tests - customer created event", () => {
     const eventDispatcher = new EventDispatcher();
     const eventHandler1 = new SendConsoleLog1WhenCustomerCreatedHandler();
     const eventHandler2 = new SendConsoleLog2WhenCustomerCreatedHandler()
-    const nameOfEvent = CustomerCreatedEvent.constructor.name.toString();
+    const nameOfEvent = "CustomerCreatedEvent";
 
     //Act
     eventDispatcher.register(nameOfEvent, eventHandler1);
@@ -47,7 +47,7 @@ describe("Domain events tests - customer created event", () => {
     const eventDispatcher = new EventDispatcher();
     const eventHandler1 = new SendConsoleLog1WhenCustomerCreatedHandler();
     const eventHandler2 = new SendConsoleLog2WhenCustomerCreatedHandler()
-    const nameOfEvent = CustomerCreatedEvent.constructor.name.toString();
+    const nameOfEvent = "CustomerCreatedEvent";
 
     eventDispatcher.register(nameOfEvent, eventHandler1);
     eventDispatcher.register(nameOfEvent, eventHandler2);
@@ -64,7 +64,7 @@ describe("Domain events tests - customer created event", () => {
     const eventDispatcher = new EventDispatcher();
     const eventHandler1 = new SendConsoleLog1WhenCustomerCreatedHandler();
     const eventHandler2 = new SendConsoleLog2WhenCustomerCreatedHandler()
-    const nameOfEvent = CustomerCreatedEvent.constructor.name;
+    const nameOfEvent = "CustomerCreatedEvent";
     const spyEventHandler1 = jest.spyOn(eventHandler1, "handle");
     const spyEventHandler2 = jest.spyOn(eventHandler2, "handle");
 

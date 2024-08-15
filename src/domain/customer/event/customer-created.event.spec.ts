@@ -1,4 +1,3 @@
-import SendEmailWhenProductIsCreatedHandler from "../../product/event/handler/send-email-when-product-is-created.handler";
 import EventDispatcher from "../../@shared/event/event-dispatcher";
 import SendConsoleLog1WhenCustomerCreatedHandler from "./handler/send-console-log1-when-customer-is-created.handler";
 import SendConsoleLog2WhenCustomerCreatedHandler from "./handler/send-console-log2-when-customer-is-created.handler";
